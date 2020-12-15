@@ -95,5 +95,6 @@ td.column-2 {
   width: 90%;
 }
 .dots {
-  font-weight: normal;
+  /* Точки з першої таблиці */
+  color: rgb(131, 130, 130);
 }
