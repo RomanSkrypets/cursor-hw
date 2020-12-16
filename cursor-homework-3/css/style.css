@@ -37,12 +37,13 @@ td {
   /* Нижні рамки */
   padding: 15px;
   border-bottom: 2px solid rgb(77, 77, 77);
+  border-collapse: collapse;
 }
 td.column-2 {
   color: rgb(131, 130, 130);
 }
 
-#raz3 {
+.raz3 {
   /* Трикутник */
   font-size: 12px;
   line-height: 1;
@@ -66,7 +67,8 @@ td.column-2 {
   width: 35%;
 }
 
-.column-3 {
+.column-3,
+.column-3_last_dots {
   /* Третя колонка */
 
   padding: 10px;
@@ -74,10 +76,11 @@ td.column-2 {
   font-size: 35px;
   font-weight: bold;
 }
-#last-str {
-  /* Нижні рамки (останні) */
-  border-bottom: none;
+.icon {
+  height: 16px;
+  width: 19px;
 }
+
 .search {
   /* Поле пошуку */
   background-color: rgb(68, 68, 68);
@@ -96,5 +99,14 @@ td.column-2 {
 }
 .dots {
   /* Точки з першої таблиці */
+  color: rgb(131, 130, 130);
+}
+.column-1_last,
+.column-2_last,
+.column-3_last_dots {
+  /* Нижні рамки (останні) */
+  border-bottom: none;
+}
+.column-2_last {
   color: rgb(131, 130, 130);
 }
