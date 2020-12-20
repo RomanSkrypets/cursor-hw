@@ -135,11 +135,6 @@ body {
 .button:focus {
   outline: none;
 }
-
-.lang {
-  width: calc(100% - (120px));
-}
-
 .lang-img {
   margin-right: 11px;
 }
