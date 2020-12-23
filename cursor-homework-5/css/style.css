@@ -159,14 +159,17 @@ a {
 .first_name,
 .last_name {
   width: 30%;
-  width: 267px;
+  width: 255px;
   height: 60px;
   left: 735px;
   top: 617px;
   border: 1px solid #333333;
   box-sizing: border-box;
   border-radius: 6px;
-  margin: 10px auto;
+  margin: 8px auto;
+}
+.last_name {
+  margin-left: 28px;
 }
 
 .phone,
@@ -182,6 +185,7 @@ a {
   border: 1px solid #333333;
   box-sizing: border-box;
   border-radius: 6px;
+  margin-bottom: 2%;
 }
 input,
 select {
