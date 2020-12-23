@@ -24,6 +24,7 @@ a {
 }
 .container {
   width: 100%;
+  margin: 0 auto;
 }
 .container_1 {
   display: flex;
@@ -206,7 +207,7 @@ select {
   color: #ffffff;
 }
 .button:hover {
-  background-color: white;
+  background-color: rgb(151, 54, 54);
   border: 2px solid #f8697c;
 }
 .button:focus {
