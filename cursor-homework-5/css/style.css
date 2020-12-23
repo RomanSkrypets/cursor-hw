@@ -1,0 +1,277 @@
+@font-face {
+  /* Шрифт */
+  font-family: 'Lato';
+  src: url(../src/fonts/Lato-Regular.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  /* Сторінка */
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  /* Лінки */
+  text-decoration: none;
+  color: inherit;
+}
+.wrapper_1 {
+  background: #ed4c5c;
+  height: 500px;
+  left: 0px;
+  top: 0px;
+}
+.container {
+  width: 100%;
+}
+.container_1 {
+  display: flex;
+  padding: 122px 0;
+}
+.left_box {
+  width: 50%;
+  margin-left: 10%;
+}
+.main_text {
+  width: 445px;
+  height: 107px;
+  left: 165px;
+  top: 122px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+
+  color: #ffffff;
+}
+.main_text_p {
+  width: 445px;
+  height: 64px;
+  left: 165px;
+  top: 253px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  /* or 20px */
+
+  text-align: justify;
+
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.icons {
+  width: 445px;
+  height: 32px;
+  top: 357px;
+}
+.icon_2,
+.icon_3 {
+  padding-left: 15px;
+}
+.icon_3 {
+  height: 28px;
+}
+.right_box {
+  width: calc(60% - 130px);
+  margin-left: 130px;
+  position: relative;
+}
+.slider_1 {
+  position: absolute;
+  width: 445px;
+  height: 311px;
+  z-index: 2;
+  border-radius: 15px;
+}
+.slider_2 {
+  position: absolute;
+  width: 383px;
+  height: 267px;
+  opacity: 0.5;
+  border-radius: 15px;
+  z-index: 1;
+
+  left: -45px;
+  top: 20px;
+}
+.slider_3 {
+  position: absolute;
+  width: 383px;
+  height: 267px;
+  z-index: 1;
+  opacity: 0.5;
+  border-radius: 15px;
+
+  left: 110px;
+  top: 20px;
+}
+
+/* Contact */
+.wrapper_2 {
+  background: #ffffff;
+  margin-bottom: 30px;
+}
+.container_2 {
+  display: flex;
+  padding-top: 112px;
+}
+.title_left {
+  width: 445px;
+  height: 80px;
+  left: 176px;
+  top: 617px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+
+  color: #000000;
+}
+.main_text_contact {
+  width: 434px;
+  height: 64px;
+  left: 176px;
+  top: 713px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  /* or 20px */
+
+  text-align: justify;
+
+  color: #000000;
+}
+.row {
+  margin-bottom: 20px;
+}
+.first_name,
+.last_name {
+  width: 30%;
+  width: 267px;
+  height: 60px;
+  left: 735px;
+  top: 617px;
+  border: 1px solid #333333;
+  box-sizing: border-box;
+  border-radius: 6px;
+  margin: 10px auto;
+}
+
+.phone,
+.service {
+  color: rgb(117, 117, 117);
+  width: 540px;
+  height: 60px;
+  left: 735px;
+  top: 701px;
+
+  /* Gray 1 */
+
+  border: 1px solid #333333;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+input,
+select {
+  padding: 0 31px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: rgba(19, 39, 67, 0.5);
+}
+.button {
+  height: 50px;
+  left: 735px;
+  top: 872px;
+
+  background: #ed4c5c;
+  border: 1.5px solid #ed4c5c;
+  box-sizing: border-box;
+  border-radius: 6px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.button:hover {
+  background-color: white;
+  border: 2px solid #f8697c;
+}
+.button:focus {
+  outline: none;
+}
+/* Footer */
+.wrapper_3 {
+  background: #fafafa;
+  color: #101010;
+  font-size: 12px;
+  line-height: 20px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+
+  line-height: 150%;
+  /* or 18px */
+
+  color: #101010;
+}
+.container_3 {
+  padding: 80px 0;
+}
+.info_box {
+  display: flex;
+}
+
+.copyright {
+  margin-left: 10%;
+}
+.info_p {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  color: #101010;
+}
+
+.info_box_item {
+  height: 264px;
+  left: 161px;
+  top: 1130px;
+  margin-left: 10%;
+}
+.info_box_services {
+  height: 164px;
+  left: 450px;
+  top: 1130px;
+  margin-left: 13%;
+}
+.services li {
+  list-style-type: none;
+}
+.info_box_get {
+  height: 128px;
+  left: 734px;
+  top: 1130px;
+  margin-left: 13%;
+}
+.info_box_support {
+  height: 22px;
+  left: 1022px;
+  top: 1130px;
+  margin-left: 13%;
+}
