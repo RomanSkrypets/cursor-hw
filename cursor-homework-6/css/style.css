@@ -468,10 +468,12 @@ a {
 .footer_nav_list {
   display: flex;
   flex-direction: column;
+  list-style-type: none;
 }
 
-.footer_nav_list_tem:not(:last-child) {
+.footer_nav_list_item:not(:last-child) {
   margin-bottom: 20px;
+  list-style-type: none;
 }
 
 .footer_nav_list_link {
