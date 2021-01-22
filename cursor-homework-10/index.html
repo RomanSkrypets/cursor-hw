@@ -4,191 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HW10</title>
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+       
 </head>
 <body>
-<div class="container mx-md-6 px-md-5">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light mx-md-4 px-md-4 my-white-background">
-        <div class="container-fluid my-insta-left-padding">
-            <a class="navbar-brand" href="#"><img src="./img/insta_logo.svg" alt="insta-logo"></a>
-            <form class="d-flex">
-                <input class="form-control me-2 my-input" type="search" placeholder="Search" aria-label="Search">
-                <div class="my-invisible">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </div>
-            </form>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="my-nav-container">
-                <div class="collapse navbar-collapse my-end-flex-box" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 my-nav-right-margin">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">
-                                <img src="img/home.svg" alt="home"></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <div class="my-send-box">
-                                    <img src="./img/direct.svg" alt="">
-                                    <div class="my-red-disc-box">
-                                        <img src="./img/message_red.svg" alt="">
-                                        <img class="my-send-5" src="./img/message_text.svg" alt="text_message">
+<header class="header container d-flex justify-content-around">
+    <nav class=" navbar fixed-top navbar-light bg-white border-bottom d-flex justify-content-around">
+        <a class="navbar-brand " href="#">
+            <img src="./img/insta_logo.svg" alt="Instagram logo">
+        </a>
+        <form class="d-flex">
+            <input class="header-search form-control me-2 me-2-edit" type="search" placeholder="Search"
+                aria-label="Search">
+        </form>
+        <nav class="nav">
+            <a href="#" class="nav-link nav-link-edit "><img src="./img/home.svg" alt="Home logo"></a>
+            <a href="#" class="nav-link nav-link-edit notifications"><img src="./img/direct.svg"
+                    alt="Message logo"></a>
+            <a href="#" class="nav-link nav-link-edit"><img src="./img/navigation.svg"
+                    alt="navigation logo"></a>
+            <a href="#" class="nav-link nav-link-edit last"><img src="./img/likes.svg"
+                    alt="likely things logo"></a>
+            <a href="#" class="nav-link nav-link-edit profile-img"><img src="./img/small_circle.png"
+                    alt="account logo" class="account-logo"></a>
+        </nav>
+    </nav>
+</header>
+<main>
+    <section class="profile">
+        <article class="profile__content">
+            <div class="container">
+                <div class="row profile__content-edit">
+                    <div class="offset-md-1 col-md-3">
+                        <img src="./img/large_circle.png" class="logo_profile" alt="Logo Profile Big">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                            <h2 class="profile__content-header">name</h2>
+                            <button type="button" class="btn btn-primary">Follow</button>
+                            <div class="btn-group" role="group">
+                                <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle btn-after">
+                                </button>                                
+                            </div>
+                            <button type="button" class="btn btn-primary dot">•••</button>
+                        </div>
+                        <div class="profile__content-followers">
+                            <div class="row">
+                                <div class="col-12-sm">
+                                    <div class="profile__content-followers-posts">
+                                        <p><span>12 </span>posts</p>
+                                    </div>
+                                    <div class="profile__content-followers-followers">
+                                        <p><span>1212 </span>followers</p>
+                                    </div>
+                                    <div class="profile__content-followers-following">
+                                        <p><span>3 </span>following</p>
                                     </div>
                                 </div>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><img src="./img/navigation.svg" alt="more photos"></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><img src="./img/likes.svg" alt="likes"></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><img src="./img/blue_disc.svg" alt="small logo profile"></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
-</div>
-<div class="fluid-container">
-    <div class="my-first-devider-rect"></div>
-</div>
-<div class="container mx-md-6 px-md-5 my-height-limit">
-    <div class="row">
-        <div class="col-lg-1"></div>
-        <div class="col-lg-3">
-            <div class="my-pad-for-circle">
-                <img src="./img/large_circle.png" class="rounded mx-auto d-block" alt="profile logo">
-            </div>
-        </div>
-        <div class="col-lg-6">
-            <div class="row my-row-1">
-                <div class="col-lg-2">
-                    <div class="my-main-font my-start-flex-box my-big-name-font">name</div>
-                </div>
-                <div class="col-lg-4 my-start-flex-box">
-                    <button class="my-main-font my-blue-btn my-big-btn" type="button">Follow</button>
-                    <button type="button" class="my-blue-btn my-small-btn"><img src="./img/arrow.svg" alt=""></button>
-                    <div class="my-start-flex-box my-three-dots">
-                        <img class="my-three-dots-item" src="./img/black_disc.svg" alt="more">
-                        <img class="my-three-dots-item" src="./img/black_disc.svg" alt="more">
-                        <img class="my-three-dots-item" src="./img/black_disc.svg" alt="more">
+                            </div>
+                            <div class="profile__content-bio">
+                                <h3 class="profile__content-bio__title">Name</h3>
+                                <p class="profile__content-bio__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                                                        <br>Voluptatibus, inventore.Saepe ipsum laboriosam nam <br>deleniti, 
+                                                                        ullam quidem nisi nobis impedit enim expedita <br>vel corrupti 
+                                                                        dolore necessitatibus numquam unde id dicta.</p>
+                                <a class="profile__content-bio__link" href="#">bit.ly/35Ce3mX</a>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
                     </div>
                 </div>
-                <div class="col-lg-7"></div>
             </div>
-            <div class="row my-row-2-3">
-                <div class="col-lg-2 my-main-font my-start-flex-box my-row-2-item-font">79 posts</div>
-                <div class="col-lg-3 my-main-font my-start-flex-box my-row-2-item-font my-row-2-lefter-item">379
-                    followers
-                </div>
-                <div class="col-lg-3 my-main-font my-start-flex-box my-row-2-item-font my-row-2-lefter-item">179
-                    following
-                </div>
-                <div class="col-lg-4"></div>
-            </div>
-            <div class="row my-row-2-3">
-                <div class="col-lg-11 my-main-font my-row-2-item-font ">
-                    Name<br/>
-                    <span class="my-row-3-text-font">Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry.
-                        Lorem Ipsum has been the industry's standard dummy text.</span><br/>
-                    <span class="my-link-color">bit.ly/35Ce3mX</span>
-                </div>
-                <div class="col-lg-1"></div>
-            </div>
-        </div>
-        <div class="col-lg-2"></div>
-    </div>
-
-    <div class="row">
-        <div class="col-lg-5">
-            <div class="my-circles-holder my-spacebetween-flex-box">
-                <div class="photo">
-                    <img class="my-small-circle" src="./img/small_circle.png" alt="stories">
-                    <div class="my-center-flex-box my-name-small-circle">Name</div>
-                </div>
-                <div class="photo">
-                    <img class="my-small-circle" src="./img/small_circle.png" alt="stories">
-                    <div class="my-center-flex-box my-name-small-circle">Name</div>
-                </div>
-                <div class="photo">
-                    <img class="my-small-circle" src="./img/small_circle.png" alt="stories">
-                    <div class="my-center-flex-box my-name-small-circle">Name</div>
+        </article>
+        <article class="profile__footer">
+            <div class="container">
+                <div class="row">
+                    <div class="card-flex offset-md-1">
+                        <div class="card card-border">
+                            <img class="profile__footer-stories__img" src="./img/black_square.png"
+                                alt="About us">
+                            <h5 class="card-title">About us</h5>
+                        </div>
+                        <div class="card card-border card-no-margin">
+                            <img class="profile__footer-stories__img" src="./img/black_square.png" alt="Team">
+                            <h5 class="card-title">Team</h5>
+                        </div>
+                        <div class="card card-border card-no-margin">
+                            <img class="profile__footer-stories__img" src="./img/black_square.png"
+                                alt="History">
+                            <h5 class="card-title">History</h5>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-7"></div>
-    </div>
-    <div class="row my-second-devider-rect">
-        <div class="col-lg-5"></div>
-        <div class="col-lg-1 my-dark-label"></div>
-        <div class="col-lg-6"></div>
-    </div>
-    <div class="row my-labels">
-        <div class="col-lg-5"></div>
-        <div class="col-lg-1 my-start-flex-box my-post-holder">
-            <img src="./img/posts.svg" alt="sort posts">
-            <div>POSTS</div>
-        </div>
-        <div class="col-lg-1 my-start-flex-box my-post-holder">
-            <img src="img/sort_profile.svg" alt="sort profile">
-            <div class="my-tagged">TAGGED</div>
-        </div>
-        <div class="col-lg-5"></div>
-    </div>
-    <div class="container my-cont-paddings">
-        <div class="row my-labels">
-            <div class="col-lg-4 my-center-flex-box"><img src="./img/black_square.png" alt="post 1"></div>
-            <div class="col-lg-4 my-center-flex-box"><img src="./img/black_square.png" alt="post 2"></div>
-            <div class="col-lg-4 my-center-flex-box"><img src="./img/black_square.png" alt="post 3"></div>
-        </div>
-        <div class="row my-labels">
-            <div class="col-lg-4 my-center-flex-box"><img src="./img/black_square.png" alt="post 4"></div>
-            <div class="col-lg-4 my-center-flex-box"><img src="./img/black_square.png" alt="post 5"></div>
-            <div class="col-lg-4 my-center-flex-box"><img src="./img/black_square.png" alt="post 6"></div>
-        </div>
-        <div class="row my-labels">
-            <div class="col-lg-4 my-center-flex-box"><img src="./img/black_square.png" alt="post 7"></div>
-            <div class="col-lg-4 my-center-flex-box"><img src="./img/black_square.png" alt="post 8"></div>
-            <div class="col-lg-4 my-center-flex-box"><img src="./img/black_square.png" alt="post 9"></div>
-        </div>
-        <div class="row my-labels">
-            <div class="col-lg-4 my-center-flex-box"><img src="./img/black_square.png" alt="post 10"></div>
-            <div class="col-lg-4 my-center-flex-box"><img src="./img/black_square.png" alt="post 11"></div>
-            <div class="col-lg-4 my-center-flex-box"><img src="./img/black_square.png" alt="post 12"></div>
-        </div>
-        <div class="row my-labels">
-            <div class="col-lg-4 my-center-flex-box"><img src="./img/black_square.png" alt="post 13"></div>
-            <div class="col-lg-4 my-center-flex-box"><img src="./img/black_square.png" alt="post 14"></div>
-            <div class="col-lg-4 my-center-flex-box"><img src="./img/black_square.png" alt="post 15"></div>
-        </div>
-        <div class="row my-labels">
-            <div class="col-lg-4 my-center-flex-box"><img src="./img/black_square.png" alt="post 16"></div>
-            <div class="col-lg-4 my-center-flex-box"><img src="./img/black_square.png" alt="post 17"></div>
-            <div class="col-lg-4 my-center-flex-box"><img src="./img/black_square.png" alt="post 18"></div>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
-
+        </article>
+        <article class="profile__posts">
+            <div class="container">
+                <ul class="nav nav-pills justify-content-center">
+                    <li class="nav-pills">
+                        <a class="nav-link nav-link-border nav-active" href="#"><img
+                                src="./img/posts.svg" alt="Fence icon.">Posts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-border-two" href="#"><img src="./img/sort_profile.svg"
+                                alt="Tagged icon.">Tagged</a>
+                    </li>
+                </ul>
+                <div class="row posts-bottom">
+                    <div class="col-4 profile__posts-images"><img src="./img/black_square.png" alt="Post">
+                    </div>
+                    <div class="col-4 profile__posts-images"><img src="./img/black_square.png" alt="Post"></div>
+                    <div class="col-4 profile__posts-images"><img src="./img/black_square.png" alt="Post"></div>
+                </div>
+                <div class="row posts-bottom">
+                    <div class="col-4 profile__posts-images"><img src="./img/black_square.png" alt="Post"></div>
+                    <div class="col-4 profile__posts-images"><img src="./img/black_square.png" alt="Post"></div>
+                    <div class="col-4 profile__posts-images"><img src="./img/black_square.png" alt="Post"></div>
+                </div>
+                <div class="row posts-bottom">
+                    <div class="col-4 profile__posts-images"><img src="./img/black_square.png" alt="Post"></div>
+                    <div class="col-4 profile__posts-images"><img src="./img/black_square.png" alt="Post"></div>
+                    <div class="col-4 profile__posts-images"><img src="./img/black_square.png" alt="Post"></div>
+                </div>
+                <div class="row posts-bottom">
+                    <div class="col-4 profile__posts-images"><img src="./img/black_square.png" alt="Post"></div>
+                    <div class="col-4 profile__posts-images"><img src="./img/black_square.png" alt="Post"></div>
+                    <div class="col-4 profile__posts-images"><img src="./img/black_square.png" alt="Post"></div>
+                </div>
+            </div>
+        </article>
+    </section>
+</main>
+</body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
+        
 </body>
 </html>
