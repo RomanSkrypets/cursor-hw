@@ -1,0 +1,288 @@
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('fonts/HelveticaNeueCyr-Medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.my-main-font {
+  font-family: Helvetica Neue, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.my-start-flex-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.my-center-flex-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.my-spacebetween-flex-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.my-end-flex-box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.my-blue-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  color: #ffffff;
+  background: #4094ef;
+}
+
+.my-blue-btn:hover {
+  transform: scale(1.1);
+}
+
+.my-blue-btn:active {
+  transform: scale(0.9);
+  background-color: crimson;
+}
+
+.my-blue-btn:focus {
+  border: none;
+  outline: none;
+}
+
+.my-white-background {
+  background-color: white !important;
+}
+
+.my-insta-left-padding {
+  padding-left: 6em;
+}
+
+.my-nav-right-margin {
+  margin-right: 6em !important;
+}
+
+.my-invisible {
+  display: none;
+  cursor: pointer;
+}
+
+.my-input {
+  text-align: center;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-image: url('img/search.svg');
+  background-size: 0.7em;
+  background-position: 25% 55%;
+  background-repeat: no-repeat;
+  outline: none;
+}
+
+.my-input:focus {
+  text-align: left;
+  background: none;
+}
+
+input.placeholder {
+  font-family: Helvetica Neue, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #8f8f8f;
+}
+
+.my-send-box {
+  position: relative;
+}
+
+.my-red-disc-box {
+  position: absolute;
+  display: block;
+  width: 81.82%;
+  top: -35%;
+  right: -36.36%;
+  object-fit: contain;
+}
+
+.my-send-5 {
+  position: absolute;
+  z-index: 1050;
+  margin: 0 auto;
+  width: 35%;
+  height: auto;
+  top: 38%;
+  right: 33%;
+}
+
+.nav-link:hover {
+  transform: scale(1.2);
+}
+
+.nav-link:active {
+  transform: scale(0.9);
+}
+
+.my-first-devider-rect {
+  margin-left: 1.24%;
+  width: 100%;
+  height: 1px;
+  background: #dbdbdb;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.my-height-limit {
+  height: 2196px;
+  overflow: hidden;
+}
+
+.my-pad-for-circle {
+  padding: 15%;
+}
+
+.my-row-1 {
+  padding-top: 5%;
+  align-items: center;
+}
+
+.my-big-name-font {
+  font-size: 26px;
+  line-height: 32px;
+  text-align: center;
+  color: #262626;
+}
+
+.my-big-btn {
+  width: 9em;
+  height: 2.5em;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.my-small-btn {
+  width: 2.7em;
+  height: 2.16em;
+  margin-left: 0.7em;
+}
+
+.my-three-dots {
+  margin-left: 1.2em;
+}
+
+.my-three-dots-item {
+  margin-left: 0.2em;
+}
+
+.my-row-2-3 {
+  padding-top: 3.5%;
+  align-items: center;
+}
+
+.my-row-2-item-font {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  color: #262626;
+}
+
+.my-row-2-lefter-item {
+  margin-left: 0.5em;
+}
+
+.my-row-3-text-font {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.my-right-padding {
+  padding-right: 1em;
+}
+
+.my-link-color {
+  color: #133768;
+}
+
+.my-circles-holder {
+  margin-top: 2em;
+  padding-left: 10em;
+  padding-right: 0;
+  margin-bottom: 50px;
+}
+
+.photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.my-name-small-circle {
+  margin-top: 1em;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #262626;
+}
+
+.my-second-devider-rect {
+  margin-top: 4em;
+  width: 100%;
+  height: 1px;
+  background: #dbdbdb;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.my-dark-label {
+  height: 1.5px;
+  background: #262626;
+}
+
+.my-labels {
+  padding-top: 1.5em;
+}
+
+.my-no-right-padding {
+  padding-right: 0;
+}
+
+.my-post-holder {
+  gap: 0.4em;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.09em;
+  color: #262626;
+}
+
+.my-post-holder:hover {
+  transform: scale(1.2);
+  text-decoration: underline;
+}
+
+.my-post-holder:active {
+  transform: scale(0.9);
+  color: crimson;
+}
+
+.my-tagged {
+  color: #8f8f8f;
+}
+
+.my-cont-paddings {
+  padding-right: 12%;
+  padding-left: 12%;
+}
