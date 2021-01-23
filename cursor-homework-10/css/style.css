@@ -11,6 +11,21 @@ main {
     margin: 70px auto 0 85px;
     border-radius: 100%;
 }
+@media (max-width: 1200px){
+    .logo_profile{
+        margin-left: 30px;
+    }
+}
+@media (max-width: 995px){
+    .logo_profile{
+        margin-left: -50px;
+    }
+}
+@media (max-width: 767px){
+    .logo_profile{
+        margin-left: 20px;
+    }
+}
 .profile__content .row .col-md-7 .btn-group .btn-primary:first-of-type {
     width: 97px;
     height: 29px;
@@ -199,6 +214,7 @@ nav .last {
     font-size: 17px;
     line-height: 21px;
     margin-bottom: 5px;
+    
 }
 
 .profile__content-bio__link {
