@@ -1,0 +1,381 @@
+.container {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container_swords {
+  background-color: black;
+}
+.swords_block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.swords-checkbox-1,
+.swords-checkbox-2 {
+  position: absolute;
+  height: 100px;
+  width: 200px;
+  opacity: 0;
+}
+
+.swords-checkbox-1 {
+  z-index: 2;
+}
+
+.swords-checkbox-2 {
+  z-index: 1;
+}
+
+.swords {
+  margin-top: 35px;
+  display: flex;
+  height: 10px;
+  width: 200px;
+  background-color: white;
+  border: none;
+}
+
+.first-sword {
+  margin-top: 0;
+}
+.guard {
+  margin-left: 25px;
+  width: 15px;
+  height: 10px;
+  background-color: #333333;
+}
+
+.red {
+  flex-direction: row-reverse;
+}
+
+.red-guard {
+  margin-right: 25px;
+}
+/* hover */
+.swords-checkbox-1:hover,
+.swords-checkbox-2:hover {
+  cursor: pointer;
+}
+
+.swords-checkbox-1:hover ~ .blue,
+.swords-checkbox-2:hover ~ .blue {
+  transition: 0.3s;
+  background-color: #41dcff;
+  box-shadow: 0 0 30px 7px #71ddff;
+}
+
+.swords-checkbox-1:hover ~ .red,
+.swords-checkbox-2:hover ~ .red {
+  transition: 0.3s;
+  background-color: #f83b73;
+  box-shadow: 0 0 30px 7px #f03362;
+}
+.swords-checkbox-1:hover ~ .green,
+.swords-checkbox-2:hover ~ .green {
+  transition: 0.3s;
+  background-color: #3be783;
+  box-shadow: 0 0 30px 7px #0bcf2c;
+}
+.swords-checkbox-1:checked ~ .sword-checkbox-2 {
+  z-index: 10;
+}
+
+.swords-checkbox-1:checked ~ .blue {
+  animation: disappear-sword 0.3s ease-in-out forwards;
+}
+
+.swords-checkbox-1:checked ~ .blue .guard {
+  animation: disappear-guard 0.7s ease-in-out forwards;
+}
+
+@keyframes disappear-sword {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50px);
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
+@keyframes disappear-guard {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50px);
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
+.swords-checkbox-1:checked ~ .red {
+  animation: cross-red-sword 0.3s ease-in-out forwards;
+}
+
+@keyframes cross-red-sword {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(45deg);
+    background-color: #f83b73;
+    box-shadow: 0 0 30px 7px #f03362;
+  }
+}
+
+.swords-checkbox-1:checked ~ .green {
+  animation: cross-green-sword 0.3s ease-in-out forwards;
+}
+
+@keyframes cross-green-sword {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: translateY(-45px) rotate(-45deg);
+    background-color: #3be783;
+    box-shadow: 0 0 30px 7px #0bcf2c;
+  }
+}
+
+/* return animation */
+.swords-checkbox-2:checked ~ .blue {
+  animation: return-anime-blue 0.3s ease-in-out forwards;
+}
+
+.swords-checkbox-2:checked ~ .blue .guard {
+  animation: return-anime-guard 0.2s ease-in-out forwards;
+}
+
+@keyframes return-anime-blue {
+  0% {
+    transform: translateY(-50px);
+    background-color: transparent;
+    box-shadow: none;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes return-anime-guard {
+  0% {
+    transform: translateY(-50px);
+    background-color: transparent;
+    box-shadow: none;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.swords-checkbox-2:checked ~ .green {
+  animation: return-anime-green 0.3s ease-in-out forwards;
+}
+
+@keyframes return-anime-green {
+  0% {
+    transform: translateY(-45px) rotate(-45deg);
+    background-color: #3be783;
+    box-shadow: 0 0 30px 7px #0bcf2c;
+  }
+  100% {
+    transform: rotate(0) translateY(0);
+  }
+}
+
+.swords-checkbox-2:checked ~ .red {
+  animation: return-anime-red 0.3s ease-in-out forwards;
+}
+
+@keyframes return-anime-red {
+  0% {
+    transform: rotate(45deg);
+    background-color: #f83b73;
+    box-shadow: 0 0 30px 7px #f03362;
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+.balls-container {
+  background-color: lightgrey;
+}
+
+.balls-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ball {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.ball-shadows {
+  margin-top: 50px;
+  display: flex;
+}
+
+.ball-shadow {
+  height: 18px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.balls-holder .ball:first-of-type {
+  background-color: rgba(37, 81, 150, 0.93);
+  animation: first-ball 0.5s linear alternate infinite;
+}
+
+.balls-holder .ball:nth-of-type(2) {
+  background: linear-gradient(90deg, rgb(37, 81, 150) 0%, rgb(26, 28, 36) 100%);
+}
+
+.balls-holder .ball:nth-of-type(3) {
+  background: linear-gradient(90deg, rgb(26, 28, 36) 0%, rgb(95, 62, 77) 100%);
+}
+
+.balls-holder .ball:nth-of-type(4) {
+  background: linear-gradient(90deg, rgb(95, 62, 77) 0%, rgb(121, 76, 71) 100%);
+}
+
+.balls-holder .ball:nth-of-type(5) {
+  background: linear-gradient(
+    90deg,
+    rgb(121, 76, 71) 0%,
+    rgb(181, 36, 81) 100%
+  );
+}
+
+.balls-holder .ball:nth-of-type(6) {
+  background: linear-gradient(
+    90deg,
+    rgb(181, 36, 81) 0%,
+    rgb(222, 38, 38) 100%
+  );
+}
+
+.balls-holder .ball:last-of-type {
+  background-color: rgb(222, 38, 38);
+  animation: last-ball 0.5s linear alternate infinite;
+  animation-delay: 0.5s;
+}
+
+.ball-shadow:first-of-type {
+  background: radial-gradient(
+    ellipse,
+    rgba(91, 143, 135, 0.15),
+    rgba(78, 119, 113, 0) 80%
+  );
+  animation: first-ball-shadow 0.5s linear alternate infinite;
+}
+
+.ball-shadow:nth-of-type(2) {
+  background: radial-gradient(
+    ellipse,
+    rgba(78, 119, 113, 0.15),
+    rgba(76, 73, 100, 0) 80%
+  );
+}
+
+.ball-shadow:nth-of-type(3) {
+  background: radial-gradient(
+    ellipse,
+    rgba(76, 73, 100, 0.15),
+    rgba(95, 62, 77, 0) 80%
+  );
+}
+
+.ball-shadow:nth-of-type(4) {
+  background: radial-gradient(
+    ellipse,
+    rgba(95, 62, 77, 0.15),
+    rgba(121, 76, 71, 0) 80%
+  );
+}
+
+.ball-shadow:nth-of-type(5) {
+  background: radial-gradient(
+    ellipse,
+    rgba(121, 76, 71, 0.15),
+    rgba(181, 36, 81, 0) 80%
+  );
+}
+
+.ball-shadow:nth-of-type(6) {
+  background: radial-gradient(
+    ellipse,
+    rgba(181, 36, 81, 0.15),
+    rgba(222, 38, 38, 0) 80%
+  );
+}
+
+.ball-shadow:last-of-type {
+  background: radial-gradient(
+    ellipse,
+    rgba(222, 38, 38, 0.15),
+    rgba(222, 38, 38, 0) 80%
+  );
+  animation: last-ball-shadow 0.5s linear alternate infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes first-ball {
+  0% {
+    transform: rotate(0) translateX(0);
+  }
+  50% {
+    transform: rotate(0) translateX(0);
+  }
+  100% {
+    transform: rotate(45deg) translateX(-120px);
+  }
+}
+
+@keyframes last-ball {
+  0% {
+    transform: rotate(0) translateX(0);
+  }
+  50% {
+    transform: rotate(0) translateX(0);
+  }
+  100% {
+    transform: rotate(-45deg) translateX(120px);
+  }
+}
+
+@keyframes first-ball-shadow {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100px);
+  }
+}
+
+@keyframes last-ball-shadow {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
