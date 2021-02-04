@@ -1,0 +1,58 @@
+include ./buttons-block-1/btn.pug
+include ./buttons-block-1/btn-ri.pug
+include ./buttons-block-1/btn-li.pug
+include ./buttons-block-1/btn-mix.pug
+include ./buttons-block-1/btn-tabs.pug
+include ./buttons-block-1/btn-sizes.pug
+
+
+-
+    let btnImgDownloadBW = {
+        "src": "../../img/download-white.svg",
+        "alt": "download svg",
+    }
+-
+    let btnImgDownloadG = {
+        "src": "../../img/download-gray.svg",
+        "alt": "download svg",
+    }
+-
+    let btnImgDownloadW = {
+        "src": "../../img/download-black.svg",
+        "alt": "download svg",
+    }
+-
+    let btnImgDownloadWB = {
+        "src": "../../img/download-blue.svg",
+        "alt": "download svg",
+    }
+-
+    let btnImgSearchBW = {
+        "src": "../../img/search-white.svg",
+        "alt": "search svg",
+    }
+-
+    let btnImgFileW = {
+        "src": "../../img/file-black.svg",
+        "alt": "file svg",
+    }
+
+.buttons-block-1
+    h2.buttons-block-1__title Buttons Big
+    .buttons-block-1__download-btns
+        +btn('btn_color-bw', 'btn_size-big', 'Download')
+        +btn('btn_color-g', 'btn_size-big', 'Download')
+        +btn('btn_color-w', 'btn_size-big', 'Download')
+        +btn('btn_color-wb', 'btn_size-big', 'Download')
+        +btn-ri('btn_color-bw', 'btn_size-big', 'Download', 'btn__img_size-big', btnImgDownloadBW)
+        +btn-ri('btn_color-g', 'btn_size-big', 'Download', 'btn__img_size-big', btnImgDownloadG)
+        +btn-ri('btn_color-w', 'btn_size-big', 'Download', 'btn__img_size-big', btnImgDownloadW)
+        +btn-ri('btn_color-wb', 'btn_size-big', 'Download', 'btn__img_size-big', btnImgDownloadWB)
+        +btn-li('btn_color-bw', 'btn_size-big', 'btn__img_size-big', btnImgDownloadBW, 'Download')
+        +btn-li('btn_color-g', 'btn_size-big', 'btn__img_size-big', btnImgDownloadG, 'Download')
+        +btn-li('btn_color-w', 'btn_size-big', 'btn__img_size-big', btnImgDownloadW, 'Download')
+        +btn-li('btn_color-wb', 'btn_size-big', 'btn__img_size-big', btnImgDownloadWB, 'Download')
+    .buttons-block-1__different-btns
+        +btn-mix('btn_size-big', 'btn__section-1_color-bw', 'btn__img_size-big', btnImgSearchBW, 'btn__section-2_color-w', 'btn__img_size-big', btnImgDownloadW, 'btn__section-3_color-w', 'btn__img_size-big', btnImgFileW)
+        +btn-tabs('btn_size-big', 'btn__section-1_color-bw', 'Tab 1', 'btn__section-3_color-w')
+        +btn-sizes('btn_size-big', 'btn__section-1_color-bw', 'S', 'btn__section-2_color-w', 'M', 'btn__section-3_color-w', 'L')        

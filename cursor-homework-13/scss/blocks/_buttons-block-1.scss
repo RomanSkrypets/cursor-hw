@@ -1,0 +1,26 @@
+.buttons-block-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5rem 2rem 2rem 2rem;
+    &__title {
+        flex-basis: 100%;
+        font-size: 2.5rem;
+    }
+    &__download-btns {
+        @each $styleName,
+        $styleValue in $blocks-btns {
+            #{$styleName}: $styleValue;
+        }
+        flex-basis: 60%;
+        min-height: 25rem;
+    }
+    &__different-btns {
+        @each $styleName,
+        $styleValue in $blocks-btns {
+            #{$styleName}: $styleValue;
+        }
+        flex-basis: 28%;
+        min-height: 25rem;
+    }
+}

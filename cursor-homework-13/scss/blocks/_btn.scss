@@ -1,0 +1,122 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 22%;
+    min-width: fit-content;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: transform 0.2s linear;
+    &:hover {
+        transform: scale(1.05);
+    }
+    &__text {
+        padding: 0 0.5rem;
+        min-width: 6rem;
+        text-align: center;
+    }
+    &_size-big {
+        font-size: 1.5rem;
+        height: 4rem;
+    }
+    &_size-small {
+        font-size: 1.3rem;
+        height: 3.5rem;
+        flex-basis: 20.1%;
+    }
+    &_color-bw {
+        border: 1px solid $blue;
+        background-color: $blue;
+        color: $white;
+    }
+    &_color-g {
+        border: 1px solid $lightgray;
+        background-color: $lightgray;
+        color: $gray;
+    }
+    &_color-w {
+        border: 1px solid $lightgray;
+        background-color: $white;
+        color: $black;
+    }
+    &_color-wb {
+        border: 1px solid $blue;
+        background-color: $white;
+        color: $blue;
+    }
+    &_color-rw {
+        border: 1px solid $red;
+        background-color: $red;
+        color: $white;
+    }
+    &_color-gw {
+        border: 1px solid $green;
+        background-color: $green;
+        color: $white;
+    }
+    &_color-gb {
+        border: 1px solid $gray;
+        background-color: $lightgray;
+        color: $black;
+    }
+    &_border-radius {
+        border-radius: 50%;
+        min-width: 4rem;
+        &:first-child {
+            min-width: 3.5rem;
+        }
+    }
+    &__section-1 {
+        padding: 0 1rem;
+        height: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-left: none;
+        &_color-bw {
+            border: 1px solid $blue;
+            border-radius: 0.5rem 0 0 0.5rem;
+            background-color: $blue;
+            color: $white;
+        }
+    }
+    &__section-2 {
+        padding: 0 1rem;
+        height: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        &_color-w {
+            border-top: 1px solid $lightgray;
+            border-bottom: 1px solid $lightgray;
+            background-color: $white;
+            color: $black;
+        }
+    }
+    &__section-3 {
+        padding: 0 1rem;
+        height: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 0px;
+        &_color-w {
+            border: 1px solid $lightgray;
+            border-radius: 0 0.5rem 0.5rem 0;
+            background-color: $white;
+            color: $black;
+        }
+    }
+    &__img {
+        margin: 0 0.5rem;
+        &_size-big {
+            width: 2.4rem;
+            height: 2.4rem;
+        }
+        &_size-small {
+            width: 1.6rem;
+            height: 1.6rem;
+        }
+    }
+}

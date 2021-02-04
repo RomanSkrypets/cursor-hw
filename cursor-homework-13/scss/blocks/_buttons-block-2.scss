@@ -1,0 +1,46 @@
+.buttons-block-2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    &__title {
+        flex-basis: 100%;
+        font-size: 2.5rem;
+    }
+    &__download-btns {
+        @each $styleName,
+        $styleValue in $blocks-btns {
+            #{$styleName}: $styleValue;
+        }
+        flex-basis: 60%;
+        min-height: 20rem;
+    }
+    &__different-btns {
+        @each $styleName,
+        $styleValue in $blocks-btns {
+            #{$styleName}: $styleValue;
+        }
+        flex-basis: 15%;
+        min-height: 20rem;
+        padding-left: 8rem;
+    }
+    &__search-btns {
+        @each $styleName,
+        $styleValue in $blocks-btns {
+            #{$styleName}: $styleValue;
+        }
+        flex-basis: 8%;
+        min-height: 20rem;
+        flex-wrap: nowrap;
+        padding-right: 1rem;
+        column-gap: 0.5rem;
+    }
+    &__tag-btns {
+        @each $styleName,
+        $styleValue in $blocks-btns {
+            #{$styleName}: $styleValue;
+        }
+        flex-basis: 10%;
+        height: 15rem;
+        padding-right: 1rem;
+    }
+}

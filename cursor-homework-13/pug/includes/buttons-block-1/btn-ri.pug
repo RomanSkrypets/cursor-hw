@@ -1,0 +1,4 @@
+mixin btn-ri(btnModColorClass, btnModSizeClass, btnText, btnImgModClass, btnImg)
+    a(href="#").btn(class=btnModColorClass)(class=btnModSizeClass)
+        p.btn__text #{btnText}
+        img.btn__img(class=btnImgModClass)&attributes(btnImg)
